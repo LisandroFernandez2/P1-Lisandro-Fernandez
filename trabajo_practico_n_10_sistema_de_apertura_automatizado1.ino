@@ -71,7 +71,6 @@ void VerificarMovimiento(){
   	}
 }
 void HayLuz(){
-    ValorFotoresistencia = analogRead(A2); 
   if (ValorFotoresistencia > 500){
     digitalWrite(ValorLuz,HIGH);
   }
