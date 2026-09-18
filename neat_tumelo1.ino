@@ -54,7 +54,7 @@ void playMidi(int pin, const int notes[][3], size_t len){
 void CuantoEsperaElServo(){
  bot1 = digitalRead(PinBoton);
   if (bot1 == LOW){
-    for (int i = 0; i < 2; i++){
+    for (int i = 0; i < 10; i++){
       Potenciometro = analogRead(PinPotenciometro);
        Potenciometro = map((Potenciometro),0,1023,100,0);
       lcd1.setCursor(0,0);
